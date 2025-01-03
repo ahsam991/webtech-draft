@@ -1,0 +1,90 @@
+<?php
+$doctorFieldsVisible = false;
+$patientFieldsVisible = false;
+
+
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" href="../asset/styles.css">
+    </head>
+
+    <body>
+        <form action="../controller/regCheck.php" method="post">
+            <div class="c0">Sign Up</div>
+            <div class="c1">
+                <div class="form">
+                    <label align="left">First Name: </label>
+                    <input type="text" name="firstName" placeholder="Enter your first name"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Last Name: </label>
+                    <input type="text" name="lastName" placeholder="Enter your last name"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Email: </label>
+                    <input type="text" name="email" placeholder="Enter your email"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Contact No.: </label>
+                    <input type="text" name="phone" placeholder="Enter your contact no."><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">NID: </label>
+                    <input type="text" name="nid" placeholder="Enter your NID"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Password: </label>
+                    <input type="text" name="password" placeholder="Enter password (must be 8 characters with one special character)"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Confirm Password: </label>
+                    <input type="text" name="confirmPassword" placeholder="Re-enter password"><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Date of Birth: </label>
+                    <input type="date" name="dob" placeholder="Enter your date of birth"><br>
+                </div>
+
+                <div class="form">
+                    <label align="right">Gender: </label>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other<br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Address: </label>
+                    <textarea name="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Medical History: </label>
+                    <textarea name="medHistory" rows="4" cols="50" placeholder="Enter your medical history (if any)"></textarea><br>
+                </div>
+
+                <div class="form">
+                    <label align="left">Emergency Contact: </label>
+                    <input type="text" name="emergencyContact" placeholder="Enter emergency contact no."><br>
+                </div>
+
+                <div class="form">
+                    <input type="submit" name="submit" value="Sign Up">
+                </div>
+
+                <div class="login-link">
+                Already have an account? <a href="../view/login.html">Login</a>
+                </div>
+
+            </div>
+
+        </form>
+    </body>
+</html>
